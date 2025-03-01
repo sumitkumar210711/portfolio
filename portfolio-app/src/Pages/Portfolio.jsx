@@ -304,7 +304,7 @@ const Portfolio = () => {
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
-        className={`fixed z-50 bottom-6 right-6 p-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform ${
+        className={`fixed z-50 bottom-6 lg:right-6 p-3 right-10  rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform ${
           showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
       >

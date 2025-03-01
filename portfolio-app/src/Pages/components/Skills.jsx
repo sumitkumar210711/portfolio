@@ -80,7 +80,7 @@ const Skills  = ({isVisible})=>{
         </h2>
 
         {/* Tabs */}
-        <div className="flex justify-center space-x-16 mb-8">
+        <div className="flex justify-center space-x-8 lg:space-x-16 mb-8">
           {Object.keys(skills).map((tab) => (
             <button
               key={tab}
