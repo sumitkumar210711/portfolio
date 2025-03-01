@@ -15,6 +15,8 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isVisible, setIsVisible] = useState({});
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const sectionRefs = {
     home: useRef(null),
     about: useRef(null),
@@ -115,32 +117,78 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-    <div className="min-h-screen bg-gray-900">
-      {/* Navigation - Added backdrop blur transition */}
-      <nav className="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
-              SK
-            </span>
-            <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className={`text-gray-300 hover:text-white transition-colors relative group capitalize
-                    ${activeSection === item ? 'text-white' : ''}`}
-                >
-                  {item}
-                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 transition-all
-                    ${activeSection === item ? 'w-full' : 'w-0 group-hover:w-full'}`} />
-                </button>
-              ))}
+    // Close mobile menu when clicking outside
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (mobileMenuOpen && !event.target.closest('nav')) {
+          setMobileMenuOpen(false);
+        }
+      };
+  
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, [mobileMenuOpen]);
+  
+    return (
+      <div className="min-h-screen bg-gray-900">
+        {/* Navigation with Mobile Menu */}
+        <nav className="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
+          <div className="container mx-auto px-6 py-4">
+            <div className="flex items-center justify-between">
+              <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
+                SK
+              </span>
+              
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex space-x-8">
+                {['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact'].map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item)}
+                    className={`text-gray-300 hover:text-white transition-colors relative group capitalize
+                      ${activeSection === item ? 'text-white' : ''}`}
+                  >
+                    {item}
+                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 transition-all
+                      ${activeSection === item ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                  </button>
+                ))}
+              </div>
+              
+              {/* Mobile Menu Button - Hamburger Icon with Animation */}
+              <button 
+                className="md:hidden text-gray-300 hover:text-white focus:outline-none"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <div className="w-6 flex mr-1 flex-col items-end space-y-1.5">
+                  <span className={`block h-0.5 ${mobileMenuOpen ? 'w-6 translate-y-2 rotate-45' : 'w-6'} bg-current transform transition-transform duration-300`}></span>
+                  <span className={`block h-0.5 ${mobileMenuOpen ? 'opacity-0' : 'w-4'} bg-current transition-opacity duration-300`}></span>
+                  <span className={`block h-0.5 ${mobileMenuOpen ? 'w-6 -translate-y-2 -rotate-45' : 'w-5'} bg-current transform transition-transform duration-300`}></span>
+                </div>
+              </button>
+            </div>
+            
+            {/* Mobile Menu Dropdown */}
+            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100 pt-4' : 'max-h-0 opacity-0'}`}>
+              <div className="flex flex-col space-y-4 pb-4">
+                {['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact'].map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => {
+                      scrollToSection(item);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`text-gray-300 hover:text-white py-2 transition-colors capitalize
+                      ${activeSection === item ? 'text-white' : ''}`}
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+  
 
       {/* Home Section - Added fade and slide up animation */}
       <section 
