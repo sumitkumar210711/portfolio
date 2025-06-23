@@ -15,7 +15,7 @@ const Experience  = ()=>{
             {/* Company and Duration Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
               <h3 className="text-2xl font-bold text-white">NestBotics Pvt Ltd</h3>
-              <span className="text-purple-400 font-medium">2nd Sept. 2024 - 28th Feb. 2025</span>
+              <span className="text-purple-400 font-medium">Sept. 2024 - Present</span>
             </div>
             
             {/* Role */}
