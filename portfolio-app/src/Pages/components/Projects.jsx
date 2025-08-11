@@ -3,6 +3,7 @@ import React from "react";
 import pocketNotes from '../../assets/Projects/pocketNotes.png';
 import lifeDiary from '../../assets/Projects/lifeDiary.PNG';
 import Portfolio from "../../assets/Projects/portfolio.PNG";
+import CourseMgmt from '../../assets/Projects/CourseImage.png';
 
 const Projects  = ()=>{
 
@@ -14,10 +15,17 @@ const Projects  = ()=>{
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
+           
+             {
+                title: "Course Management System - RBAC",
+                description: "A Full-Stack Student Management System featuring Role-Based Dashboards for Students, Teachers, and Admins.",
+                tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Bcrypt.js"],
+                image: CourseMgmt
+              },
              {
                 title: "My Portfolio",
                 description: "A responsive and modern portfolio website showcasing my skills, projects, and contact details.",
-                tech: ["React.js", "TailwindCSS"],
+                tech: ["React.js", "TailwindCSS", "Email-Js"],
                 image: Portfolio
               },
               {
@@ -26,12 +34,8 @@ const Projects  = ()=>{
                 tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
                 image: pocketNotes
               },
-              {
-                title: "Online Life Diary",
-                description: "A secure web-based journaling platform with user authentication and encrypted data storage.",
-                tech: ["PHP", "MySQL", "JavaScript"],
-                image: lifeDiary
-              }
+              
+            
             
           ].map((project, index) => (
             <div 
