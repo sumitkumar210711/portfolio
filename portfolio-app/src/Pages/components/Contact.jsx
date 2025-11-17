@@ -57,10 +57,7 @@ const Contact = () => {
                 <Mail className="text-purple-400" />
                 sumitkumar210711@gmail.com
               </p>
-              <p className="flex items-center gap-3 text-gray-300">
-                <Phone className="text-purple-400" />
-                +91-9012453938
-              </p>
+              
             </div>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl">

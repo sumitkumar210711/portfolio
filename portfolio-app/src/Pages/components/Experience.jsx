@@ -40,7 +40,7 @@ const Experience = () => {
         <div className="relative p-6 bg-gray-900 rounded-xl shadow-xl transition-all duration-300 hover:shadow-purple-500/25 hover:-translate-y-1">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
             <h3 className="text-2xl font-bold text-white">NestBotics Pvt Ltd</h3>
-            <span className="text-purple-400 font-medium">Sept. 2024 - March 2025</span>
+            <span className="text-purple-400 font-medium">June 2024 - May 2025</span>
           </div>
 
           <h4 className="text-xl text-gray-300 mb-4">Full Stack Developer Intern</h4>
