@@ -9,32 +9,33 @@ const Experience = () => {
 
       <div className="max-w-4xl mx-auto space-y-10">
         {/* NxtWave Experience */}
-        <div className="relative p-6 bg-gray-900 rounded-xl shadow-xl transition-all duration-300 hover:shadow-purple-500/25 hover:-translate-y-1">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-            <h3 className="text-2xl font-bold text-white">NxtWave</h3>
-            <span className="text-purple-400 font-medium">June 2025 - Present</span>
-          </div>
+       <div className="relative p-6 bg-gray-900 rounded-xl shadow-xl transition-all duration-300 hover:shadow-purple-500/25 hover:-translate-y-1">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+    <h3 className="text-2xl font-bold text-white">NxtWave</h3>
+    <span className="text-purple-400 font-medium">June 2025 - Present</span>
+  </div>
 
-          <h4 className="text-xl text-gray-300 mb-4">Software Development Instructor</h4>
+  <h4 className="text-xl text-gray-300 mb-4">Software Development Engineer (MERN) & Mentor</h4>
 
-          <ul className="space-y-3 text-gray-300">
-            {[
-              "Currently mentoring students in full stack web development with hands-on training in MERN stack technologies.",
-              "Delivering live coding sessions and guiding learners through real-world projects built with HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and SQL.",
-              "Explaining advanced concepts such as authentication, API integration, and deployment using tools like Git, GitHub, and Postman.",
-              "Helping learners debug and improve their code by sharing industry best practices and clean code principles.",
-              "Facilitating assessments and feedback to track progress and reinforce strong programming fundamentals."
-            ].map((responsibility, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-3 transition-all duration-300 hover:translate-x-2"
-              >
-                <span className="text-purple-400 mt-1.5">•</span>
-                {responsibility}
-              </li>
-            ))}
-          </ul>
-        </div>
+  <ul className="space-y-3 text-gray-300">
+    {[
+      "Developing MERN stack applications that provide learners with real-world, hands-on project experience.",
+      "Mentoring 400+ students in full-stack development, covering frontend, backend, debugging, APIs, and deployment workflows.",
+      "Conducting code reviews and teaching development best practices including clean code, version control, and API design.",
+      "Guiding learners through building production-like applications using React.js, Node.js, Express.js, MongoDB, and SQL.",
+      "Supporting learners in understanding real-world development workflows including Git usage, debugging techniques, and API testing."
+    ].map((responsibility, index) => (
+      <li
+        key={index}
+        className="flex items-start gap-3 transition-all duration-300 hover:translate-x-2"
+      >
+        <span className="text-purple-400 mt-1.5">•</span>
+        {responsibility}
+      </li>
+    ))}
+  </ul>
+</div>
+
 
         {/* NestBotics Experience */}
         <div className="relative p-6 bg-gray-900 rounded-xl shadow-xl transition-all duration-300 hover:shadow-purple-500/25 hover:-translate-y-1">

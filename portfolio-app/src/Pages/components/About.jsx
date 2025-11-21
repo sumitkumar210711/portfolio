@@ -11,35 +11,41 @@ const About = () => {
       <div className="lg:pl-[100px] grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="space-y-6 text-lg text-gray-300 lg:pt-16">
           <p className="transition-all duration-500 delay-100">
-            Hello! I'm <span className="font-semibold text-white">Sumit Kumar</span>, a
-            <span className="text-purple-400"> Full Stack Developer</span> with hands-on experience building
-            real-world applications using the MERN stack. I hold an
-            <span className="text-purple-400"> M.Tech in AI & Data Science</span> from VIT Bhopal University.
-          </p>
+  Hello! I'm <span className="font-semibold text-white">Sumit Kumar</span>, a
+  <span className="text-purple-400"> Full Stack / MERN Developer</span> with experience
+  building real-world, production-ready applications using React.js, Node.js, Express.js,
+  and MongoDB. I hold an
+  <span className="text-purple-400"> M.Tech in AI & Data Science</span> from VIT Bhopal University.
+</p>
 
-          <p className="transition-all duration-500 delay-200">
-            I am working as a <span className="text-purple-400">Software Development Instructor at NxtWave</span>,
-            mentoring learners in HTML, CSS, Bootstrap, JavaScript, React.js, Node.js, Express.js,
-            MongoDB, SQL, and Git. My role includes evaluating assignments, resolving
-            coding issues, and guiding students through full stack projects.
-          </p>
 
-          <p className="transition-all duration-500 delay-300">
-            Previously, I worked as a <span className="font-semibold text-white">Full Stack Developer at NestBotics Pvt. Ltd.</span>,
-            where I built responsive React interfaces, developed backend APIs using Node.js
-            and Express, and worked with MySQL & MongoDB databases. I also have over
-            <span className="text-purple-400 font-semibold"> 4 years of technical writing experience</span> at JavaTpoint,
-            specializing in documentation for web development and programming.
-          </p>
+        <p className="transition-all duration-500 delay-200">
+  I am currently working as a <span className="text-purple-400">Software Development Engineer & Mentor at NxtWave</span>,
+  where I build full-stack MERN applications and mentor 400+ learners in real-world
+  development practices. My work includes guiding students through frontend & backend
+  development, debugging, API integration, authentication, and deployment.
+</p>
 
-          <p className="transition-all duration-500 delay-400">
-            I enjoy creating scalable applications, solving complex problems, and guiding
-            aspiring developers. I'm always exploring new technologies to expand my skill set.
-          </p>
 
-          <p className="text-lg font-semibold text-white">
-            🚀 Let’s connect and build impactful products together!
-          </p>
+       <p className="transition-all duration-500 delay-300">
+  Previously, I worked as a <span className="font-semibold text-white">Full Stack Developer at NestBotics Pvt. Ltd.</span>,
+  where I developed responsive React interfaces, built REST APIs using Node.js and Express,
+  and worked with MySQL and MongoDB databases. I collaborated in Agile teams to deliver
+  scalable end-to-end features.
+</p>
+
+
+        <p className="transition-all duration-500 delay-400">
+  I enjoy creating clean and scalable applications, solving complex problems, and improving
+  development workflows. I’m constantly learning new technologies to expand my technical
+  capabilities and deliver better digital products.
+</p>
+
+
+        <p className="text-lg font-semibold text-white">
+  🚀 Let’s connect and build impactful products together!
+</p>
+
         </div>
 
         {/* Profile Section */}
