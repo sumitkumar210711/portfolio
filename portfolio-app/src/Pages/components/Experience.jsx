@@ -15,16 +15,16 @@ const Experience = () => {
     <span className="text-purple-400 font-medium">June 2025 - Present</span>
   </div>
 
-  <h4 className="text-xl text-gray-300 mb-4">Software Development Engineer (MERN) & Mentor</h4>
+  <h4 className="text-xl text-gray-300 mb-4">Software Development Engineer (MERN)</h4>
 
   <ul className="space-y-3 text-gray-300">
     {[
-      "Developing MERN stack applications that provide learners with real-world, hands-on project experience.",
-      "Mentoring 400+ students in full-stack development, covering frontend, backend, debugging, APIs, and deployment workflows.",
-      "Conducting code reviews and teaching development best practices including clean code, version control, and API design.",
-      "Guiding learners through building production-like applications using React.js, Node.js, Express.js, MongoDB, and SQL.",
-      "Supporting learners in understanding real-world development workflows including Git usage, debugging techniques, and API testing."
-    ].map((responsibility, index) => (
+  "Developed small full-stack MERN applications assigned by the curriculum engineering team to strengthen real-world development skills.",
+  "Implemented frontend interfaces using React.js, functional components, hooks, and reusable UI elements.",
+  "Integrated MongoDB for data storage and retrieval, and created schemas, performed data modeling, and wrote efficient queries to handle application data.",
+  "Built backend APIs using Node.js and Express.js to handle CRUD operations, user authentication, and business logic.",
+
+].map((responsibility, index) => (
       <li
         key={index}
         className="flex items-start gap-3 transition-all duration-300 hover:translate-x-2"

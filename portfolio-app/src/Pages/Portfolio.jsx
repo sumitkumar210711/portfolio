@@ -31,7 +31,7 @@ const Portfolio = () => {
   // Download CV function
   const downloadCV = () => {
     // Replace with the actual path to your resume file
-    const resumeUrl = '/Sumit Kumar_Resume.pdf';
+    const resumeUrl = '/Sumit Kumar Resume.pdf';
     
     // Create a link element
     const downloadLink = document.createElement('a');

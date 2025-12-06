@@ -1,14 +1,21 @@
 import logo from './logo.svg';
+
 import './App.css';
 import Portfolio from './Pages/Portfolio';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 
-function App() {
+const App = () =>{
+  
+
   return (
-    <>
-    
-    <Portfolio />
-    
-    </>
+
+ 
+ 
+       
+   <div>
+     <Portfolio />
+ </div>
+   
   );
 }
 

@@ -10,41 +10,36 @@ const About = () => {
 
       <div className="lg:pl-[100px] grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="space-y-6 text-lg text-gray-300 lg:pt-16">
+
           <p className="transition-all duration-500 delay-100">
-  Hello! I'm <span className="font-semibold text-white">Sumit Kumar</span>, a
-  <span className="text-purple-400"> Full Stack / MERN Developer</span> with experience
-  building real-world, production-ready applications using React.js, Node.js, Express.js,
-  and MongoDB. I hold an
-  <span className="text-purple-400"> M.Tech in AI & Data Science</span> from VIT Bhopal University.
-</p>
+            Hello! I'm <span className="font-semibold text-white">Sumit Kumar</span>, a 
+            <span className="text-purple-400"> Full Stack / MERN Developer</span> with 1+ years of experience 
+            building scalable, production-ready web applications using React.js, Node.js, Express.js, and MongoDB. 
+            I hold an <span className="text-purple-400">M.Tech in AI & Data Science</span> from VIT Bhopal University 
+            and an MCA from ABES Engineering College.
+          </p>
 
+          <p className="transition-all duration-500 delay-200">
+            I am currently working as a <span className="text-purple-400">Software Development Engineer (MERN) at NxtWave</span>, 
+            contributing to small full-stack projects, building frontend interfaces, developing backend APIs, integrating databases, 
+            and deploying production-ready applications.
+          </p>
 
-        <p className="transition-all duration-500 delay-200">
-  I am currently working as a <span className="text-purple-400">Software Development Engineer & Mentor at NxtWave</span>,
-  where I build full-stack MERN applications and mentor 400+ learners in real-world
-  development practices. My work includes guiding students through frontend & backend
-  development, debugging, API integration, authentication, and deployment.
-</p>
+          <p className="transition-all duration-500 delay-300">
+            Previously, I worked as a <span className="font-semibold text-white">Full Stack Developer at NestBotics Pvt. Ltd.</span>, 
+            where I designed responsive UI using React.js, Tailwind CSS, and Material-UI, developed RESTful APIs with 
+            Node.js and Express, and managed MySQL and MongoDB databases. I collaborated in Agile teams to deliver 
+            end-to-end features with clean code and proper state management.
+          </p>
 
+          <p className="transition-all duration-500 delay-400">
+            I enjoy creating clean, scalable applications, solving complex problems, and continuously improving development workflows. 
+            I am always learning new technologies to expand my skills and deliver impactful digital solutions.
+          </p>
 
-       <p className="transition-all duration-500 delay-300">
-  Previously, I worked as a <span className="font-semibold text-white">Full Stack Developer at NestBotics Pvt. Ltd.</span>,
-  where I developed responsive React interfaces, built REST APIs using Node.js and Express,
-  and worked with MySQL and MongoDB databases. I collaborated in Agile teams to deliver
-  scalable end-to-end features.
-</p>
-
-
-        <p className="transition-all duration-500 delay-400">
-  I enjoy creating clean and scalable applications, solving complex problems, and improving
-  development workflows. I’m constantly learning new technologies to expand my technical
-  capabilities and deliver better digital products.
-</p>
-
-
-        <p className="text-lg font-semibold text-white">
-  🚀 Let’s connect and build impactful products together!
-</p>
+          <p className="text-lg font-semibold text-white">
+            🚀 Let’s connect and build innovative products together!
+          </p>
 
         </div>
 
@@ -57,9 +52,6 @@ const About = () => {
               className="object-cover lg:w-[350px] lg:h-[400px] transition-transform duration-500 hover:scale-110"
             />
           </div>
-
-          {/* Experience Card */}
-          
         </div>
       </div>
     </div>
